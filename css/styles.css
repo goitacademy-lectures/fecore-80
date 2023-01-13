@@ -1,0 +1,156 @@
+/* @font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/OpenSans400.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+} */
+
+:root {
+  /* Font */
+  --main-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Text colors  */
+  --main-txt-cl: #555555;
+  --secondary-txt-cl: #303030;
+  --accent-txt-cl: #ff6c00;
+  --light-txt-cl: #ffffff;
+  --dark-txt-cl: #000000;
+  --grey-txt-cl: #9da4bd;
+  --grey-20-txt-cl: rgba(157, 164, 189, 0.2);
+  --grey-40-txt-cl: rgba(157, 164, 189, 0.4);
+  --grey-60-txt-cl: rgba(157, 164, 189, 0.6);
+
+  /* Background colors */
+  --main-bg-cl: #555555;
+  --accent-bg-cl: #ff6c00;
+  --light-bg-cl: #ffffff;
+  --dark-bg-cl: #000000;
+  --grey-bg-cl: #9da4bd;
+
+  /* Others */
+}
+
+/* Base styles */
+body {
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--secondary-txt-cl);
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--light-txt-cl);
+  background-color: var(--accent-bg-cl);
+}
+
+.btn-theme-dark {
+  color: var(--light-txt-cl);
+}
+
+.title {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-txt-cls);
+}
+
+.title-theme-dark {
+  color: var(--light-txt-cl);
+}
+
+.undertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--secondary-txt-cl);
+}
+
+.undertitle-theme-dark {
+  color: var(--grey-60-txt-cl);
+}
+
+/**
+  |============================
+  | Header section
+  |============================
+*/
+.header {
+  color: teal;
+}
+.header-logo {
+  color: teal;
+}
+.header-img {
+  color: teal;
+}
+.header-nav {
+  color: teal;
+}
+.header-list {
+  color: teal;
+}
+.header-item {
+  color: teal;
+}
+.header-link {
+  color: teal;
+}
+.header-contact {
+  color: teal;
+}
+.header-btn {
+  color: teal;
+}
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+
+/**
+  |============================
+  | About section
+  |============================
+*/
+
+/**
+  |============================
+  | Price section
+  |============================
+*/
+.price {
+  background-color: var(--main-bg-cl);
+}
+
+.price-item {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--grey-txt-cl);
+}
