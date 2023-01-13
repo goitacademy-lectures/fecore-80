@@ -9,47 +9,61 @@
       content="We are experts in trendy men’s haircuts. We work quickly, carefully and with style."
     />
     <title>BarberShop</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header section -->
-    <header>
-      <a href="">
-        <img src="./images/header/logo.svg" alt="BarberShop logo" />
+    <header class="header">
+      <a class="header-logo link" href="">
+        <img class="header-img" src="./images/header/logo.svg" alt="BarberShop logo" />
       </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="">About</a>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-link link" href="">About</a>
           </li>
-          <li>
-            <a href="">Services and prices</a>
+          <li class="header-item">
+            <a class="header-link link" href="">Services and prices</a>
           </li>
-          <li>
-            <a href="">Barbers</a>
+          <li class="header-item">
+            <a class="header-link link" href="">Barbers</a>
           </li>
-          <li>
-            <a href="">Contacts</a>
+          <li class="header-item">
+            <a class="header-link link" href="">Contacts</a>
           </li>
         </ul>
       </nav>
 
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Online-booking</button>
+      <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="header-btn btn btn-theme-dark" type="button">Online-booking</button>
     </header>
     <main>
       <!-- Hero section -->
       <section class="hero">
         <ul>
           <li>
-            <a href="https://instagram.com">Instagram</a>
+            <a class="link" href="https://instagram.com">Instagram</a>
           </li>
           <li>
-            <a href="https://youtube.com">Youtube</a>
+            <a class="link" href="https://youtube.com">Youtube</a>
           </li>
         </ul>
         <p>A hair salon for men in Kyiv</p>
         <h1>BarberShop</h1>
-        <p>We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
+        <p
+          >We are experts in trendy men’s haircuts. We work quickly, carefully and with style. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo commodi ea cum. Aut porro
+          deleniti accusamus ea itaque harum impedit odit, qui, distinctio adipisci, totam
+          consectetur omnis hic earum?</p
+        >
         <!-- Slider -->
         <!-- <ul>
           <li>slide-1</li>
@@ -58,10 +72,10 @@
         </ul>
         <ul>
           <li>
-            <button type="button">Back</button>
+           <button class="btn" type="button">Back</button>
           </li>
           <li>
-            <button type="button">Forward</button>
+           <button class="btn" type="button">Forward</button>
           </li>
         </ul> -->
       </section>
@@ -80,8 +94,8 @@
             />
           </li>
         </ul>
-        <p>About</p>
-        <h2>Best Barbershop in your city</h2>
+        <p class="undertitle">About</p>
+        <h2 class="title">Best Barbershop in your city</h2>
         <p>If you want to add more confidence to your image, you should visit us.</p>
         <p>
           We are a team that never stops at what has been achieved and are thirsty for changes. And
@@ -89,30 +103,30 @@
           team that is always "on the same wave" with clients. Therefore, we are always ready to
           improve everyone who comes to us!
         </p>
-        <button type="button">ONLINE-BOOKING</button>
+        <button class="btn" type="button">ONLINE-BOOKING</button>
       </section>
       <!-- Price section -->
       <section class="price">
-        <p class="price-text">Spend your time with the best masters</p>
-        <h2 class="price-title">Services and prices</h2>
+        <p class="undertitle undertitle-theme-dark">Spend your time with the best masters</p>
+        <h2 class="title title-theme-dark">Services and prices</h2>
         <!-- List -->
-        <div>
+        <div class="price-wrapper">
           <!-- Inner list -->
-          <ul>
-            <li>Men’s haircut from 300 uah.</li>
-            <li>Beard trim from 300 uah.</li>
-            <li>Mustache trim from 200 uah.</li>
-            <li>Straight razor shave from 200 uah.</li>
+          <ul class="price-list">
+            <li class="price-item">Men’s haircut from 300 uah.</li>
+            <li class="price-item">Beard trim from 300 uah.</li>
+            <li class="price-item">Mustache trim from 200 uah.</li>
+            <li class="price-item">Straight razor shave from 200 uah.</li>
           </ul>
           <!-- Inner list -->
-          <ul>
-            <li>Trainee’s haircut from 50 uah.</li>
-            <li>Haircut under the nozzle from 200 uah.</li>
-            <li>Children’s haircut (0-12 y.o.) from 300 uah.</li>
-            <li>Camouflage of gray hair from 200 uah.</li>
+          <ul class="price-list">
+            <li class="price-item">Trainee’s haircut from 50 uah.</li>
+            <li class="price-item">Haircut under the nozzle from 200 uah.</li>
+            <li class="price-item">Children’s haircut (0-12 y.o.) from 300 uah.</li>
+            <li class="price-item">Camouflage of gray hair from 200 uah.</li>
           </ul>
         </div>
-        <button type="button">online-booking</button>
+        <button class="btn btn-theme-dark" type="button">online-booking</button>
       </section>
       <!-- Benefits section -->
       <section>
@@ -135,7 +149,7 @@
           </li>
         </ul>
         <p>Old traditional school</p>
-        <h2>Why people come to us?</h2>
+        <h2 class="title">Why people come to us?</h2>
         <p
           >Only good things are said about us. But it's better to see and feel 1 time than read 10
           times.
@@ -144,7 +158,7 @@
       <!-- Team section -->
       <section>
         <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
+        <h2 class="title">Our barbers</h2>
         <ul>
           <li>
             <img
@@ -157,20 +171,34 @@
             <p>Extreme Barber</p>
             <ul>
               <li>
-                <a href="https://instagram.com" target="_blank" rel="noopener norefferer"
+                <a
+                  class="link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener norefferer"
                   >Instagram</a
                 >
               </li>
               <li>
-                <a href="https://twitter.com" target="_blank" rel="noopener norefferer">Twitter</a>
+                <a class="link" href="https://twitter.com" target="_blank" rel="noopener norefferer"
+                  >Twitter</a
+                >
               </li>
               <li>
-                <a href="https://facebook.com" target="_blank" rel="noopener norefferer"
+                <a
+                  class="link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener norefferer"
                   >Facebook</a
                 >
               </li>
               <li>
-                <a href="https://linkedin.com" target="_blank" rel="noopener norefferer"
+                <a
+                  class="link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener norefferer"
                   >LinkedIn</a
                 >
               </li>
@@ -187,20 +215,34 @@
             <p>Extreme Barber</p>
             <ul>
               <li>
-                <a href="https://instagram.com" target="_blank" rel="noopener norefferer"
+                <a
+                  class="link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener norefferer"
                   >Instagram</a
                 >
               </li>
               <li>
-                <a href="https://twitter.com" target="_blank" rel="noopener norefferer">Twitter</a>
+                <a class="link" href="https://twitter.com" target="_blank" rel="noopener norefferer"
+                  >Twitter</a
+                >
               </li>
               <li>
-                <a href="https://facebook.com" target="_blank" rel="noopener norefferer"
+                <a
+                  class="link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener norefferer"
                   >Facebook</a
                 >
               </li>
               <li>
-                <a href="https://linkedin.com" target="_blank" rel="noopener norefferer"
+                <a
+                  class="link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener norefferer"
                   >LinkedIn</a
                 >
               </li>
@@ -217,20 +259,34 @@
             <p>Extreme Barber</p>
             <ul>
               <li>
-                <a href="https://instagram.com" target="_blank" rel="noopener norefferer"
+                <a
+                  class="link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener norefferer"
                   >Instagram</a
                 >
               </li>
               <li>
-                <a href="https://twitter.com" target="_blank" rel="noopener norefferer">Twitter</a>
+                <a class="link" href="https://twitter.com" target="_blank" rel="noopener norefferer"
+                  >Twitter</a
+                >
               </li>
               <li>
-                <a href="https://facebook.com" target="_blank" rel="noopener norefferer"
+                <a
+                  class="link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener norefferer"
                   >Facebook</a
                 >
               </li>
               <li>
-                <a href="https://linkedin.com" target="_blank" rel="noopener norefferer"
+                <a
+                  class="link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener norefferer"
                   >LinkedIn</a
                 >
               </li>
@@ -241,7 +297,7 @@
       <!-- Gallery section -->
       <section>
         <p>In Latin, "barba" means "beard"</p>
-        <h2 hidden>Gallery of our barbers</h2>
+        <h2 class="title" hidden>Gallery of our barbers</h2>
         <ul>
           <li>
             <img
@@ -274,15 +330,16 @@
       </section>
       <!-- Booking section -->
       <section>
-        <h2>Online-booking</h2>
+        <h2 class="title">Online-booking</h2>
       </section>
       <!-- Contatcs section -->
       <section>
-        <h2>Contacts</h2>
+        <h2 class="title">Contacts</h2>
         <address>
           <ul>
             <li>
               <a
+                class="link"
                 href="https://goo.gl/maps/h1joxWHGTaYhUQRp9"
                 target="_blank"
                 rel="noopener norefferer"
@@ -290,10 +347,10 @@
               >
             </li>
             <li>
-              <a href="tel:+380441111111">+38 044 111 11 11</a>
+              <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
             </li>
             <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+              <a class="link" href="mailto:barbershop@email.com">barbershop@email.com</a>
             </li>
           </ul>
         </address>
@@ -309,12 +366,18 @@
       <p>&#169; Copyright 2020</p>
       <ul>
         <li>
-          <a href="https://https://instagram.com" target="_blank" rel="noopener noreferrer"
+          <a
+            class="link"
+            href="https://https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
             >Instagram</a
           >
         </li>
         <li>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a>
+          <a class="link" href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+            >Youtube</a
+          >
         </li>
       </ul>
     </footer>
