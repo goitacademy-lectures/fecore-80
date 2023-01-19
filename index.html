@@ -8,8 +8,8 @@
     <title>BarberShop</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
@@ -17,18 +17,18 @@
 
     <!-- Modern normalize -->
     <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
     />
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header section -->
     <header class="header">
       <div class="container">
-        <a class="header-link" href="">
+        <a class="header-link" href>
           <img
             class="header-logo"
             src="./images/header/logo.svg"
@@ -66,10 +66,10 @@
         <div class="container">
           <ul class="media-list list">
             <li class="media-item">
-              <a class="media-link link" href="">Instagram</a>
+              <a class="media-link link" href>Instagram</a>
             </li>
             <li class="media-item">
-              <a class="media-link link" href="">Youtube</a>
+              <a class="media-link link" href>Youtube</a>
             </li>
           </ul>
           <div class="hero-right-side">
@@ -115,7 +115,7 @@
           <div class="about-right-side">
             <p class="uppertitle">About</p>
             <h2 class="title">Best Barbershop in your city</h2>
-            <p class="undertitle">
+            <p class="undertitle" data-action title="title">
               If you want to add more confidence to your image, you should definitely visit us.
             </p>
             <p class="about-desc">
@@ -196,9 +196,9 @@
                   <a
                     class="socials-link link"
                     href="https://instagram.com"
+                    aria-label="Instagram"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Instagram"
                   >
                   </a>
                 </li>
@@ -243,9 +243,9 @@
                   <a
                     class="socials-link link"
                     href="https://instagram.com"
+                    aria-label="Instagram"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Instagram"
                   >
                   </a>
                 </li>
@@ -290,9 +290,9 @@
                   <a
                     class="socials-link link"
                     href="https://instagram.com"
+                    aria-label="Instagram"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Instagram"
                   >
                   </a>
                 </li>
@@ -335,7 +335,7 @@
       <section class="gallery section">
         <div class="container">
           <p class="uppertitle">in Latin, "barba" means "beard"</p>
-          <h2 hidden>Our gallery</h2>
+          <h2 hidden="">Our gallery</h2>
           <ul class="gallery-list list">
             <li class="gallery-item">
               <img
@@ -424,10 +424,10 @@
         <p class="footer-copyright">&#169; Copyright 2020</p>
         <ul class="media-list list">
           <li class="media-item">
-            <a class="media-link link" href="">Instagram</a>
+            <a class="media-link link" href>Instagram</a>
           </li>
           <li class="media-item">
-            <a class="media-link link" href="">Youtube</a>
+            <a class="media-link link" href>Youtube</a>
           </li>
         </ul>
       </div>
