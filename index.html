@@ -27,7 +27,7 @@
   <body>
     <!-- Header section -->
     <header class="header">
-      <div class="container">
+      <div class="header-container container">
         <a class="header-link" href>
           <img
             class="header-logo"
@@ -38,8 +38,8 @@
           />
         </a>
         <nav class="header-nav">
-          <ul class="list header-list">
-            <li class="header-item" id="item">
+          <ul class="header-list list">
+            <li class="header-item">
               <a class="header-nav-link link" href="#about">About</a>
             </li>
             <li class="header-item">
@@ -53,7 +53,7 @@
             </li>
           </ul>
         </nav>
-        <div>
+        <div class="header-wrapper">
           <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
           <button class="btn btn-theme-dark" type="button">Online-booking</button>
         </div>
@@ -186,55 +186,57 @@
         <div class="container">
           <p class="uppertitle">for true enjoyers of the atmosphere</p>
           <h2 class="title">Our barbers</h2>
-          <ul class="team-list list">
-            <li class="team-item">
+          <ul class="team-list card-set list">
+            <li class="team-item card-set-item">
               <img src="./images/team/img-1.jpg" alt="John Smith" width="370" height="346" />
-              <h3 class="team-name">John Smith</h3>
-              <p class="team-position">Extreme Barber</p>
-              <ul class="socials list">
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://instagram.com"
-                    aria-label="Instagram"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://twitter.com"
-                    aria-label="Twitter"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://facebook.com"
-                    aria-label="Facebook"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://linkedin.com"
-                    aria-label="LinkedIn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-              </ul>
+              <div class="team-wrapper">
+                <h3 class="team-name">John Smith</h3>
+                <p class="team-position">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://instagram.com"
+                      aria-label="Instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://twitter.com"
+                      aria-label="Twitter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://facebook.com"
+                      aria-label="Facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://linkedin.com"
+                      aria-label="LinkedIn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="team-item">
+            <li class="team-item card-set-item">
               <img src="./images/team/img-2.jpg" alt="Michele Doe" width="370" height="346" />
               <h3 class="team-name">Michele Doe</h3>
               <p class="team-position">Extreme Barber</p>
@@ -281,7 +283,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item">
+            <li class="team-item card-set-item">
               <img src="./images/team/img-3.jpg" alt="Alan Black" width="370" height="346" />
               <h3 class="team-name">Alan Black</h3>
               <p class="team-position">Extreme Barber</p>
@@ -335,9 +337,9 @@
       <section class="gallery section">
         <div class="container">
           <p class="uppertitle">in Latin, "barba" means "beard"</p>
-          <h2 hidden="">Our gallery</h2>
-          <ul class="gallery-list list">
-            <li class="gallery-item">
+          <h2 class="visually-hidden">Our gallery</h2>
+          <ul class="gallery-list card-set list">
+            <li class="gallery-item card-set-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/img-1.jpg"
@@ -346,7 +348,7 @@
                 height="360"
               />
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item card-set-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/img-2.jpg"
@@ -355,7 +357,7 @@
                 height="360"
               />
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item card-set-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/img-3.jpg"
@@ -364,7 +366,43 @@
                 height="360"
               />
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item card-set-item">
+              <img
+                class="gallery-img"
+                src="./images/gallery/img-4.jpg"
+                alt="gallery"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item card-set-item">
+              <img
+                class="gallery-img"
+                src="./images/gallery/img-1.jpg"
+                alt="gallery"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item card-set-item">
+              <img
+                class="gallery-img"
+                src="./images/gallery/img-2.jpg"
+                alt="gallery"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item card-set-item">
+              <img
+                class="gallery-img"
+                src="./images/gallery/img-3.jpg"
+                alt="gallery"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item card-set-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/img-4.jpg"

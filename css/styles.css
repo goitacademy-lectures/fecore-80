@@ -23,6 +23,8 @@
 
   /* Others */
   --radius: 25px;
+  --indent: 30px;
+  --items: 3;
 }
 
 /* Base styles */
@@ -62,6 +64,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -90,8 +94,8 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .link {
@@ -134,6 +138,8 @@ img {
 }
 
 .main-title {
+  margin-bottom: 20px;
+
   font-family: var(--secondary-font);
   font-size: 72px;
   line-height: calc(85 / 72);
@@ -179,15 +185,64 @@ img {
 
 /**
   |============================
+  | Card set
+  |============================
+*/
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: var(--indent);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+}
+
+/**
+  |============================
   | Header section
   |============================
 */
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: var(--dark-bg-cl);
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  margin-right: auto;
+}
+
+.header-link {
+  margin-right: 130px;
+}
+
+.header-list {
+  display: flex;
+  gap: 30px;
+}
+/*
+.header-item:not(:last-child) {
+  margin-right: 30px;
+} */
+/*
+.header-item + .header-item {
+  margin-left: 30px;
+} */
+
 .header-nav-link,
 .header-contact {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -203,6 +258,12 @@ img {
   color: var(--accent-txt-cl);
 }
 
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 /**
   |============================
   | Hero section
@@ -210,6 +271,10 @@ img {
 */
 .hero {
   background-color: var(--dark-bg-cl);
+}
+.hero-undertitle {
+  width: 360px;
+  margin-bottom: 0;
 }
 
 .media-link {
@@ -308,6 +373,14 @@ img {
   background-color: #f7f7f7;
 }
 
+.team-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border: 1px solid var(--accent-bg-cl);
+  border-top: none;
+}
+
 .team-name {
   font-weight: 400;
   font-size: 18px;
@@ -329,6 +402,10 @@ img {
   | Gallery
   |============================
 */
+.gallery-list {
+  --items: 4;
+}
+
 /**
   |============================
   | Booking
