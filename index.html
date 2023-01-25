@@ -62,16 +62,18 @@
     <!-- Main section -->
     <main>
       <!-- Hero section -->
-      <section class="hero section">
-        <div class="container">
-          <ul class="media-list list">
-            <li class="media-item">
-              <a class="media-link link" href>Instagram</a>
-            </li>
-            <li class="media-item">
-              <a class="media-link link" href>Youtube</a>
-            </li>
-          </ul>
+      <section class="hero">
+        <div class="hero-container container">
+          <div class="hero-left-side">
+            <ul class="media-list list">
+              <li class="media-item">
+                <a class="media-link link" href>Instagram</a>
+              </li>
+              <li class="media-item">
+                <a class="media-link link" href>Youtube</a>
+              </li>
+            </ul>
+          </div>
           <div class="hero-right-side">
             <p class="uppertitle uppertitle-theme-dark">A hair salon for men in Kyiv</p>
             <h1 class="main-title">BarberShop</h1>
@@ -79,7 +81,7 @@
               We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
             </p>
           </div>
-          <ul class="slider-list list">
+          <ul class="slider-list list visually-hidden">
             <li class="slider-item">
               <button class="slider-btn" type="button">Back</button>
             </li>
@@ -131,23 +133,39 @@
       <!-- Price section -->
       <section class="price section" id="price">
         <div class="container">
-          <p class="uppertitle uppertitle-theme-dark">spend your time with the best masters</p>
+          <p class="uppertitle uppertitle-theme-dark"> spend your time with the best masters </p>
           <h2 class="title title-theme-dark">Services and prices</h2>
           <div class="price-block">
             <ul class="price-list list">
-              <li class="price-item">Men’s haircut from 300 uah.</li>
-              <li class="price-item">Beard trim from 300 uah.</li>
-              <li class="price-item">Mustache trim from 200 uah.</li>
-              <li class="price-item">Straight razor shave from 200 uah.</li>
+              <li class="price-item">
+                <span class="price-service">Men’s haircut</span> from 300 uah.
+              </li>
+              <li class="price-item">
+                <span class="price-service">Beard trim</span> from 300 uah.
+              </li>
+              <li class="price-item">
+                <span class="price-service">Mustache trim</span> from 200 uah.
+              </li>
+              <li class="price-item">
+                <span class="price-service">Straight razor shave</span> from 200 uah.
+              </li>
             </ul>
             <ul class="price-list list">
-              <li class="price-item">Trainee’s haircut from 50 uah.</li>
-              <li class="price-item">Haircut under the nozzle from 200 uah.</li>
-              <li class="price-item">Children’s haircut (0-12 y.o.) from 300 uah.</li>
-              <li class="price-item">Camouflage of gray hair from 200 uah.</li>
+              <li class="price-item">
+                <span class="price-service">Trainee’s haircut</span> from 50 uah.
+              </li>
+              <li class="price-item">
+                <span class="price-service">Haircut under the nozzle</span> from 200 uah.
+              </li>
+              <li class="price-item">
+                <span class="price-service">Children’s haircut (0-12 y.o.)</span> from 300 uah.
+              </li>
+              <li class="price-item">
+                <span class="price-service">Camouflage of gray hair</span> from 200 uah.
+              </li>
             </ul>
           </div>
-          <button class="btn btn-theme-dark" type="button">online-booking</button>
+          <button class="price-btn btn btn-theme-dark" type="button">online-booking</button>
         </div>
       </section>
       <!-- Benefits section -->
@@ -185,7 +203,7 @@
       <section class="team section" id="team">
         <div class="container">
           <p class="uppertitle">for true enjoyers of the atmosphere</p>
-          <h2 class="title">Our barbers</h2>
+          <h2 class="team-title title">Our barbers</h2>
           <ul class="team-list card-set list">
             <li class="team-item card-set-item">
               <img src="./images/team/img-1.jpg" alt="John Smith" width="370" height="346" />
@@ -238,97 +256,101 @@
             </li>
             <li class="team-item card-set-item">
               <img src="./images/team/img-2.jpg" alt="Michele Doe" width="370" height="346" />
-              <h3 class="team-name">Michele Doe</h3>
-              <p class="team-position">Extreme Barber</p>
-              <ul class="socials list">
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://instagram.com"
-                    aria-label="Instagram"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://twitter.com"
-                    aria-label="Twitter"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://facebook.com"
-                    aria-label="Facebook"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://linkedin.com"
-                    aria-label="LinkedIn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-              </ul>
+              <div class="team-wrapper">
+                <h3 class="team-name">Michele Doe</h3>
+                <p class="team-position">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://instagram.com"
+                      aria-label="Instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://twitter.com"
+                      aria-label="Twitter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://facebook.com"
+                      aria-label="Facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://linkedin.com"
+                      aria-label="LinkedIn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-item card-set-item">
               <img src="./images/team/img-3.jpg" alt="Alan Black" width="370" height="346" />
-              <h3 class="team-name">Alan Black</h3>
-              <p class="team-position">Extreme Barber</p>
-              <ul class="socials list">
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://instagram.com"
-                    aria-label="Instagram"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://twitter.com"
-                    aria-label="Twitter"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://facebook.com"
-                    aria-label="Facebook"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-                <li class="socials-item">
-                  <a
-                    class="socials-link link"
-                    href="https://linkedin.com"
-                    aria-label="LinkedIn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  </a>
-                </li>
-              </ul>
+              <div class="team-wrapper">
+                <h3 class="team-name">Alan Black</h3>
+                <p class="team-position">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://instagram.com"
+                      aria-label="Instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://twitter.com"
+                      aria-label="Twitter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://facebook.com"
+                      aria-label="Facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href="https://linkedin.com"
+                      aria-label="LinkedIn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -336,45 +358,9 @@
       <!-- Gallery section -->
       <section class="gallery section">
         <div class="container">
-          <p class="uppertitle">in Latin, "barba" means "beard"</p>
+          <p class="gallery-uppertitle uppertitle">in Latin, "barba" means "beard"</p>
           <h2 class="visually-hidden">Our gallery</h2>
           <ul class="gallery-list card-set list">
-            <li class="gallery-item card-set-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery/img-1.jpg"
-                alt="gallery"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item card-set-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery/img-2.jpg"
-                alt="gallery"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item card-set-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery/img-3.jpg"
-                alt="gallery"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item card-set-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery/img-4.jpg"
-                alt="gallery"
-                width="270"
-                height="360"
-              />
-            </li>
             <li class="gallery-item card-set-item">
               <img
                 class="gallery-img"
@@ -458,7 +444,7 @@
     </main>
     <!-- Footer section -->
     <footer class="footer">
-      <div class="container">
+      <div class="footer-container container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
         <ul class="media-list list">
           <li class="media-item">
