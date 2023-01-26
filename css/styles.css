@@ -320,9 +320,6 @@ img {
   |============================
 */
 .about {
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .about-right-side {
   width: 470px;
@@ -333,6 +330,9 @@ img {
   font-size: 14px;
   line-height: calc(26 / 14);
   color: var(--dark-txt-cl);
+}
+#rect {
+  fill: #ff6c00;
 }
 /**
   |============================
@@ -437,6 +437,9 @@ img {
 .team-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 .team-name {
   font-weight: 400;
@@ -446,12 +449,45 @@ img {
   letter-spacing: 0.02em;
 }
 .team-position {
+  margin-bottom: 30px;
+
   font-size: 14px;
   line-height: calc(19 / 14);
   text-align: center;
   letter-spacing: 0.02em;
 
   color: var(--accent-txt-cl);
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  background-color: var(--light-bg-cl);
+  border-radius: 50%;
+  color: var(--secondary-bg-cl);
+}
+/* .socials-link:hover,
+.socials-link:focus {
+  color: var(--accent-bg-cl);
+}
+.socials-icon {
+  fill: currentColor;
+} */
+
+.socials-icon {
+  fill: var(--secondary-bg-cl);
+}
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--accent-bg-cl);
 }
 /**
   |============================
@@ -471,20 +507,53 @@ img {
   |============================
 */
 .contatcs-group {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: var(--dark-bg-cl);
+  background-image: url(../images/contacts/bg-img.png);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 408px) top;
+}
+.contatcs-container {
+  display: flex;
+  gap: 30px;
+}
+
+.booking {
+  width: 570px;
 }
 /**
   |============================
   | Contatcs
   |============================
 */
+.contacts {
+  width: 570px;
+  padding-left: 100px;
+}
 .contacts-address {
+  margin-bottom: 72px;
   font-style: normal;
 }
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
 .contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
   color: var(--grey-txt-cl);
 }
+.contacts-icon {
+  fill: transparent;
+  stroke: currentColor;
+}
 .contacts-uppertitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
