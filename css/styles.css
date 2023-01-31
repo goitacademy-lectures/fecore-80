@@ -26,9 +26,8 @@
   --radius: 25px;
   --indent: 30px;
   --items: 3;
-
-  /* --indent-x: 20px;
-  --indent-y: var(--indent-x); */
+  --hero-idx: 10;
+  --header-idx: 100;
 }
 
 /* Base styles */
@@ -204,9 +203,13 @@ img {
   |============================
 */
 .header {
+  position: fixed;
+  top: 0;
+  z-index: var(--header-idx);
+
+  width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: var(--dark-bg-cl);
 }
 .header-container {
   display: flex;
@@ -222,8 +225,24 @@ img {
   display: flex;
   gap: 30px;
 }
+.header-nav-link.current {
+  color: var(--accent-txt-cl);
+}
+.header-nav-link.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--accent-bg-cl);
+  border-radius: 2px;
+}
 .header-nav-link,
 .header-contact {
+  position: relative;
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -245,6 +264,8 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
+
+  padding-right: 20px;
 }
 
 /**
@@ -255,6 +276,7 @@ img {
 .hero {
 }
 .hero-container {
+  position: relative;
   display: flex;
 }
 .hero-undertitle {
@@ -303,6 +325,15 @@ img {
   background-size: cover;
   background-position: right;
 }
+.slider-list {
+  position: absolute;
+  right: 35px;
+  bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 .slider-btn {
   font-weight: 600;
   font-size: 11px;
@@ -321,6 +352,14 @@ img {
 */
 .about {
 }
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+.about-list {
+  display: flex;
+  gap: 30px;
+}
 .about-right-side {
   width: 470px;
 }
@@ -330,9 +369,6 @@ img {
   font-size: 14px;
   line-height: calc(26 / 14);
   color: var(--dark-txt-cl);
-}
-#rect {
-  fill: #ff6c00;
 }
 /**
   |============================
@@ -398,6 +434,35 @@ img {
   | Benefits
   |============================
 */
+.benefits-container {
+  display: flex;
+  gap: 30px;
+}
+.benefits-left-side {
+  width: 570px;
+}
+.benefits-right-side {
+  width: 500px;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.benefits-item {
+  width: 170px;
+  min-height: 133px;
+  padding: 20px 24px;
+  background-color: #f7f7f7;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.benefits-item:nth-child(2n) {
+  margin-top: 30px;
+}
 .benefits-quantity {
   font-weight: 700;
   font-size: 42px;
