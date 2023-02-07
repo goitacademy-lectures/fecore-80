@@ -447,6 +447,40 @@
         <div class="contatcs-container container">
           <section class="booking section">
             <h2 class="title title-theme-dark">Online-booking</h2>
+            <form class="booking-form" name="booking_form">
+              <div class="booking-form-group">
+                <label class="booking-form-field">
+                  <input
+                    class="booking-form-input"
+                    type="text"
+                    name="user_name"
+                    placeholder="Antony Black"
+                    required
+                  />
+                  <span class="booking-form-label">Name*</span>
+                </label>
+                <label class="booking-form-field">
+                  <input
+                    class="booking-form-input"
+                    type="phone"
+                    name="user_phone"
+                    placeholder="+38 099 123 45 67"
+                    required
+                  />
+                  <span class="booking-form-label">Name*</span>
+                </label>
+              </div>
+              <label class="booking-form-field">
+                <textarea
+                  class="booking-form-message"
+                  name="user_message"
+                  rows="5"
+                  placeholder="Type your message..."
+                ></textarea>
+                <span class="booking-form-label">Message</span>
+              </label>
+              <button class="btn btn-theme-dark" type="submit">Send</button>
+            </form>
           </section>
           <section class="contacts section" id="contacts">
             <h2 class="title title-theme-dark">Contacts</h2>
@@ -519,6 +553,38 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <strong>Leave your contacts and we will call you back</strong>
+        <form class="order-form" name="order_form">
+          <label class="order-form-label" for="user_name">Name</label>
+          <div class="order-form-group">
+            <input class="order-form-field" type="text" name="user_name" id="user_name" />
+            <svg class="order-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <label class="order-form-label" for="user_phone">Phone</label>
+          <div class="order-form-group">
+            <input class="order-form-field" type="text" name="user_phone" id="user_phone" />
+            <svg class="order-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <label class="order-form-label" for="user_mail">Email</label>
+          <div class="order-form-group">
+            <input class="order-form-field" type="text" name="user_mail" id="user_mail" />
+            <svg class="order-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <label class="order-form-label" for="user_comment">Comment</label>
+          <textarea
+            class="order-form-comment"
+            name="user_comment"
+            id="user_comment"
+            rows="6"
+          ></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
