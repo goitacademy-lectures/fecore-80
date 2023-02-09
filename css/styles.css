@@ -660,6 +660,88 @@ img {
 .booking {
   width: 570px;
 }
+/* booking form */
+.booking-form {
+}
+.booking-form-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  margin-bottom: 44px;
+}
+.booking-form-field {
+  position: relative;
+  display: block;
+}
+.booking-form-input,
+.booking-form-message {
+  width: 270px;
+  height: 24px;
+  padding: 0;
+
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: var(--grey-txt-cl);
+
+  border: none;
+  border-bottom: 1px solid var(--grey-cl-40);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color var(--anim-fast);
+}
+.booking-form-input:focus,
+.booking-form-input:not(:placeholder-shown),
+.booking-form-message:focus,
+.booking-form-message:not(:placeholder-shown) {
+  border-color: var(--light-bg-cl);
+}
+.booking-form-input::placeholder,
+.booking-form-message::placeholder {
+  opacity: 0;
+  transition: opacity var(--anim-fast) 150ms;
+}
+
+.booking-form-input:focus::placeholder,
+.booking-form-message:focus::placeholder {
+  opacity: 1;
+}
+.booking-form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--grey-cl-40);
+
+  transform-origin: center left;
+  transition: transform var(--anim-fast), color var(--anim-fast);
+}
+.booking-form-input:focus + .booking-form-label,
+.booking-form-input:not(:placeholder-shown) + .booking-form-label,
+.booking-form-message:focus + .booking-form-label,
+.booking-form-message:not(:placeholder-shown) + .booking-form-label {
+  transform: translateY(-100%) scale(0.8);
+  color: var(--light-txt-cl);
+}
+.booking-form-message {
+  display: block;
+  width: 100%;
+  height: 76px;
+  padding: 10px;
+
+  font-size: 12px;
+  resize: none;
+}
+.booking-btn {
+  margin-top: 44px;
+}
+.btn-theme-dark {
+}
 /**
   |============================
   | Contatcs
@@ -755,6 +837,8 @@ img {
 
   width: 500px;
   height: 600px;
+  padding: 40px;
+
   background-color: #fff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -782,4 +866,109 @@ img {
   border: 1px solid var(--accent-bg-cl);
   background-color: transparent;
   border-radius: 50%;
+}
+.modal-title {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+/* form */
+.order-form {
+}
+.order-form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: calc(12 / 10);
+}
+.order-form-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+.order-form-field {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 6px 42px;
+
+  border-radius: 4px;
+  border: 1px solid var(--dark-txt-cl);
+  outline: transparent;
+  transition: var(--anim-fast);
+}
+.order-form-field:focus {
+  border-color: var(--accent-bg-cl);
+  box-shadow: 0 0 0 5px rgba(255, 106, 0, 0.25);
+}
+.order-form-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  pointer-events: none;
+  transition: var(--anim-fast);
+}
+.order-form-field:focus + .order-form-icon {
+  fill: var(--accent-bg-cl);
+}
+.order-form-comment {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 14px;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+
+  border-radius: 4px;
+  border: 1px solid var(--dark-txt-cl);
+  outline: transparent;
+  transition: var(--anim-fast);
+  resize: none;
+}
+.order-form-comment:focus {
+  border-color: var(--accent-bg-cl);
+  box-shadow: 0 0 0 5px rgba(255, 106, 0, 0.25);
+}
+.order-form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+.order-form-checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid var(--dark-txt-cl);
+  border-radius: 3px;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' fill='%23fff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0;
+  transition: var(--anim-fast);
+}
+.order-form-checkbox:checked {
+  background-color: var(--accent-bg-cl);
+  border-color: var(--accent-bg-cl);
+  background-size: 14px;
+}
+.order-form-desc {
+  font-size: 14px;
+  user-select: none;
+}
+.order-form-link {
+  color: var(--accent-txt-cl);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.order-form-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

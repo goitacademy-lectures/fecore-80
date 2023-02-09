@@ -225,7 +225,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <svg class="socials-icon" width="20" height="20">
+                      <svg class="socials-icon" width="22" height="22">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
@@ -447,7 +447,7 @@
         <div class="contatcs-container container">
           <section class="booking section">
             <h2 class="title title-theme-dark">Online-booking</h2>
-            <form class="booking-form" name="booking_form">
+            <form class="booking-form" name="booking_form" autocomplete="off">
               <div class="booking-form-group">
                 <label class="booking-form-field">
                   <input
@@ -456,18 +456,19 @@
                     name="user_name"
                     placeholder="Antony Black"
                     required
+                    minlength="3"
                   />
                   <span class="booking-form-label">Name*</span>
                 </label>
                 <label class="booking-form-field">
                   <input
                     class="booking-form-input"
-                    type="phone"
+                    type="tel"
                     name="user_phone"
                     placeholder="+38 099 123 45 67"
                     required
                   />
-                  <span class="booking-form-label">Name*</span>
+                  <span class="booking-form-label">Phone*</span>
                 </label>
               </div>
               <label class="booking-form-field">
@@ -479,7 +480,7 @@
                 ></textarea>
                 <span class="booking-form-label">Message</span>
               </label>
-              <button class="btn btn-theme-dark" type="submit">Send</button>
+              <button class="booking-btn btn btn-theme-dark" type="submit">Send</button>
             </form>
           </section>
           <section class="contacts section" id="contacts">
@@ -553,27 +554,27 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <strong>Leave your contacts and we will call you back</strong>
+        <strong class="modal-title">Leave your contacts and we will call you back</strong>
         <form class="order-form" name="order_form">
           <label class="order-form-label" for="user_name">Name</label>
           <div class="order-form-group">
             <input class="order-form-field" type="text" name="user_name" id="user_name" />
-            <svg class="order-form-icon" width="20" height="20">
-              <use href=""></use>
+            <svg class="order-form-icon" width="22" height="22">
+              <use href="./images/icons.svg#avatar"></use>
             </svg>
           </div>
           <label class="order-form-label" for="user_phone">Phone</label>
           <div class="order-form-group">
             <input class="order-form-field" type="text" name="user_phone" id="user_phone" />
-            <svg class="order-form-icon" width="20" height="20">
-              <use href=""></use>
+            <svg class="order-form-icon" width="22" height="22">
+              <use href="./images/icons.svg#phone"></use>
             </svg>
           </div>
           <label class="order-form-label" for="user_mail">Email</label>
           <div class="order-form-group">
             <input class="order-form-field" type="text" name="user_mail" id="user_mail" />
-            <svg class="order-form-icon" width="20" height="20">
-              <use href=""></use>
+            <svg class="order-form-icon" width="22" height="22">
+              <use href="./images/icons.svg#icon-mail"></use>
             </svg>
           </div>
           <label class="order-form-label" for="user_comment">Comment</label>
@@ -583,11 +584,23 @@
             id="user_comment"
             rows="6"
           ></textarea>
-          <button class="btn" type="submit">Send</button>
+
+          <label class="order-form-agreement">
+            <input class="order-form-checkbox" type="checkbox" />
+            <span class="order-form-desc">
+              I accept the terms and conditions of
+              <a class="order-form-link" href="">the Privacy Policy</a>
+            </span>
+          </label>
+          <button class="order-form-btn btn" type="submit">Send</button>
         </form>
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
+    <script src="./js/phone-mask.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/modal.js"></script>
   </body>
