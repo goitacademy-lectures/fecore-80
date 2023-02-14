@@ -1,6 +1,6 @@
 # FECore80
 
-Заняття 11:
+Заняття 12:
 
 - Оформлення стану елементів форми
 - Псевдокласи стану: `valid || invalid`, `required || optional`, `checked`, `disabled || enabled`,
