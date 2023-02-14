@@ -1,6 +1,6 @@
 # FECore80
 
-Заняття 11:
+Заняття 13:
 
 - Медіа-запити: `media-type` та `media-feature`
 - Медіа-функції `min-width` та `max-width`
