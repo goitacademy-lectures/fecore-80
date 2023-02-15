@@ -29,13 +29,6 @@
     <header class="header" data-header>
       <div class="header-container container">
         <a class="header-link" href aria-label="BarberSop logo">
-          <!-- <img
-            class="header-logo"
-            src="./images/header/logo.svg"
-            alt="BarberSop logo"
-            width="68"
-            height="56"
-          /> -->
           <svg class="header-logo" width="75" height="75">
             <use id="shave" href="./images/icons.svg#shave"></use>
             <use id="text" href="./images/icons.svg#text"></use>
@@ -61,12 +54,28 @@
           <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
           <button class="btn btn-theme-dark" type="button" data-modal-open>Online-booking</button>
         </div>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main section -->
     <main>
       <!-- Hero section -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="hero-container container">
           <div class="hero-left-side">
             <ul class="hero-media media-list list">
@@ -94,9 +103,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- About section -->
-      <section class="about section" id="about">
+      <!-- <section class="about section" id="about">
         <div class="about-container container">
           <ul class="about-list list">
             <li class="about-item">
@@ -133,7 +142,7 @@
             <button class="btn" type="button">online-booking</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Price section -->
       <section class="price section" id="price">
         <div class="container">
@@ -173,7 +182,7 @@
         </div>
       </section>
       <!-- Benefits section -->
-      <section class="benefits section">
+      <!-- <section class="benefits section">
         <div class="benefits-container container">
           <div class="benefits-left-side">
             <ul class="benefits-list list">
@@ -204,9 +213,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Team section -->
-      <section class="team section" id="team">
+      <!-- <section class="team section" id="team">
         <div class="container">
           <p class="uppertitle">for true enjoyers of the atmosphere</p>
           <h2 class="team-title title">Our barbers</h2>
@@ -396,9 +405,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Gallery section -->
-      <section class="gallery section">
+      <!-- <section class="gallery section">
         <div class="container">
           <p class="gallery-uppertitle uppertitle">in Latin, "barba" means "beard"</p>
           <h2 class="visually-hidden">Our gallery</h2>
@@ -441,9 +450,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Booking & Contatcs sections -->
-      <div class="contatcs-group">
+      <!-- <div class="contatcs-group">
         <div class="contatcs-container container">
           <section class="booking section">
             <h2 class="title title-theme-dark">Online-booking</h2>
@@ -530,10 +539,10 @@
             </div>
           </section>
         </div>
-      </div>
+      </div> -->
     </main>
     <!-- Footer section -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
         <ul class="media-list list">
@@ -545,9 +554,10 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- Modal window -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="24" height="24">
@@ -595,13 +605,53 @@
           <button class="order-form-btn btn" type="submit">Send</button>
         </form>
       </div>
+    </div> -->
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-btn js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/phone-mask.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
