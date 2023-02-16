@@ -22,7 +22,8 @@
     />
 
     <!-- Custom styles -->
-    <link href="./css/styles.css" rel="stylesheet" />
+    <!-- <link href="./css/styles.css" rel="stylesheet" /> -->
+    <link href="./css/styles1.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header section -->
@@ -75,7 +76,7 @@
     <!-- Main section -->
     <main>
       <!-- Hero section -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="hero-container container">
           <div class="hero-left-side">
             <ul class="hero-media media-list list">
@@ -94,18 +95,23 @@
               We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
             </p>
           </div>
-          <ul class="slider-list list">
+          <ul class="slider-pagination list">
+            <li class="slider-pagination-item active"></li>
+            <li class="slider-pagination-item"></li>
+            <li class="slider-pagination-item"></li>
+          </ul>
+          <ul class="slider-controls list">
             <li class="slider-item">
-              <button class="slider-btn" type="button">Back</button>
+              <button class="slider-btn slider-btn-prev disable" type="button">Back</button>
             </li>
             <li class="slider-item">
-              <button class="slider-btn" type="button">Forward</button>
+              <button class="slider-btn slider-btn-next" type="button">Forward</button>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- About section -->
-      <!-- <section class="about section" id="about">
+      <section class="about section" id="about">
         <div class="about-container container">
           <ul class="about-list list">
             <li class="about-item">
@@ -142,7 +148,7 @@
             <button class="btn" type="button">online-booking</button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Price section -->
       <section class="price section" id="price">
         <div class="container">
@@ -182,29 +188,9 @@
         </div>
       </section>
       <!-- Benefits section -->
-      <!-- <section class="benefits section">
+      <section class="benefits section">
         <div class="benefits-container container">
-          <div class="benefits-left-side">
-            <ul class="benefits-list list">
-              <li class="benefits-item">
-                <p class="benefits-quantity">600 <sup class="benefits-decor">+</sup></p>
-                <p class="benefits-text">Satisfied customers per day</p>
-              </li>
-              <li class="benefits-item">
-                <p class="benefits-quantity">50 <sup class="benefits-decor">+</sup></p>
-                <p class="benefits-text">Awards for excellent service</p>
-              </li>
-              <li class="benefits-item">
-                <p class="benefits-quantity">20 <sup class="benefits-decor">+</sup></p>
-                <p class="benefits-text">Kyiv’s best professional barbers</p>
-              </li>
-              <li class="benefits-item">
-                <p class="benefits-quantity">100 <sup class="benefits-decor">+</sup></p>
-                <p class="benefits-text">Gifts for regular customers</p>
-              </li>
-            </ul>
-          </div>
-          <div class="benefits-right-side">
+          <div class="benefits-top">
             <p class="uppertitle">old traditional school</p>
             <h2 class="title">Why people come to&nbsp;us?</h2>
             <p class="undertitle">
@@ -212,10 +198,30 @@
               10 times.
             </p>
           </div>
+          <div class="benefits-bottom">
+            <ul class="benefits-list list">
+              <li class="benefits-item">
+                <p class="benefits-quantity">600</p>
+                <p class="benefits-text">Satisfied customers per day</p>
+              </li>
+              <li class="benefits-item">
+                <p class="benefits-quantity">50</p>
+                <p class="benefits-text">Awards for excellent service</p>
+              </li>
+              <li class="benefits-item">
+                <p class="benefits-quantity">20</p>
+                <p class="benefits-text">Kyiv’s best professional barbers</p>
+              </li>
+              <li class="benefits-item">
+                <p class="benefits-quantity">100</p>
+                <p class="benefits-text">Gifts for regular customers</p>
+              </li>
+            </ul>
+          </div>
         </div>
-      </section> -->
+      </section>
       <!-- Team section -->
-      <!-- <section class="team section" id="team">
+      <section class="team section" id="team">
         <div class="container">
           <p class="uppertitle">for true enjoyers of the atmosphere</p>
           <h2 class="team-title title">Our barbers</h2>
@@ -405,9 +411,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Gallery section -->
-      <!-- <section class="gallery section">
+      <section class="gallery section">
         <div class="container">
           <p class="gallery-uppertitle uppertitle">in Latin, "barba" means "beard"</p>
           <h2 class="visually-hidden">Our gallery</h2>
@@ -450,7 +456,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Booking & Contatcs sections -->
       <!-- <div class="contatcs-group">
         <div class="contatcs-container container">
@@ -542,19 +548,19 @@
       </div> -->
     </main>
     <!-- Footer section -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
-        <p class="footer-copyright">&#169; Copyright 2020</p>
-        <ul class="media-list list">
+        <ul class="footer-media-list media-list list">
           <li class="media-item">
-            <a class="media-link link" href>Instagram</a>
+            <a class="footer-media-link media-link link" href>Instagram</a>
           </li>
           <li class="media-item">
-            <a class="media-link link" href>Youtube</a>
+            <a class="footer-media-link media-link link" href>Youtube</a>
           </li>
         </ul>
+        <p class="footer-copyright">&#169; Copyright 2020</p>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Modal window -->
     <!-- <div class="backdrop is-hidden" data-modal>
