@@ -115,7 +115,8 @@ img {
   clip: rect(0 0 0 0);
   width: 1px;
   overflow: hidden;
-} /* reset end */
+}
+/* reset end */
 .page {
   overflow: hidden;
 }
@@ -134,7 +135,8 @@ img {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-} /* 320px <= phone screen <= infinity */
+}
+/* 320px <= phone screen <= infinity */
 .container {
   min-width: 320px;
   max-width: 448px;
@@ -148,7 +150,8 @@ img {
   .container {
     max-width: 720px;
   }
-} /* 1200px <= tablet screen <= infinity */
+}
+/* 1200px <= tablet screen <= infinity */
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -576,6 +579,11 @@ img {
 .about-item:hover .about-img {
   transform: scale(1.2);
 }
+@media screen and (max-width: 1199.98px) {
+  .about-img {
+    width: 330px;
+  }
+}
 .about-right-side {
   max-width: 330px;
 }
@@ -905,15 +913,6 @@ img {
     --items: 4;
   }
 }
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(100%);
 
 .gallery-item {
   position: relative;
@@ -921,28 +920,6 @@ img {
 
   outline: 2px dashed blueviolet;
   outline-offset: -2px;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(100%);
-
-  padding: 20px;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(3px);
-
-  transition: transform var(--anim-slow);
-}
-.gallery-item:hover .overlay {
-  transform: translateY(0);
-}
-.overlay-text {
-  color: var(--light-txt-cl);
 }
 /**
   |============================
@@ -956,7 +933,8 @@ img {
   background-image: url(../images/booking/booking-bg.png);
   background-repeat: no-repeat;
   background-position: left calc(50% + 423px) top 50%;
-} /* booking form */
+}
+/* booking form */
 .booking-form-group {
   display: flex;
   align-items: center;
@@ -1107,7 +1085,8 @@ img {
 }
 .contacts-schedule {
   color: var(--grey-cl);
-} /**
+}
+/**
   |============================
   | Footer
   |============================
